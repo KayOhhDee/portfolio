@@ -1,0 +1,10 @@
+@import "~normalize-scss/sass/normalize";
+@include normalize();
+@import './modules/variables';
+@import './modules/mixins';
+@import './modules/navState';
+@import './modules/general';
+@import './modules/layout';
+@import './modules/navbar';
+@import './modules/btn';
+@import './modules/modal';

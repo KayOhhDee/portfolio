@@ -1,0 +1,30 @@
+.btn {
+  cursor: pointer;
+
+  &--default {
+    @include btn-default;
+
+
+    &:hover {
+      background: $white;
+      color: $main;
+    }
+  }
+
+  &--contact {
+    border: 0;
+    color: white !important;
+    box-shadow: 0 10px 6px -7px rgba(0, 0, 0, 0.59);
+    background: #1C86EE;
+    padding: 1rem 2rem;
+    @include transition;
+
+    @include after480px {
+      padding: 1rem 3rem;
+    }
+
+    &:hover {
+      color: #7C7C6E !important;
+    }
+  }
+}
