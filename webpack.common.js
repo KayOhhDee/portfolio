@@ -5,18 +5,6 @@ module.exports = {
     main: "./app/assets/scripts/index.js",
     vendor: "./app/assets/scripts/vendor.js"
   },
-  plugins: [
-    new SVGSpritemapPlugin("./app/assets/images/icons/**/*.svg", {
-      output: {
-        filename: "assets/images/sprites/spritemap.svg",
-        svg4everybody: {
-          nosvg: true,
-          polyfill: true
-        },
-        svgo: true
-      }
-    })
-  ],
   module: {
     rules: [
       {

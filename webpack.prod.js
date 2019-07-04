@@ -46,8 +46,23 @@ module.exports = merge(common, {
         }
       },
       {
+        test: /\.(svg)$/,
+        use: {
+          loader: "file-loader",
+          options: {
+            name: "[name].[ext]",
+            outputPath: "assets/images/icons"
+          }
+        }
+      },
+      {
         test: /\.scss$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader", "sass-loader"]
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "postcss-loader",
+          "sass-loader"
+        ]
       }
     ]
   }
